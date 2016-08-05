@@ -1,0 +1,108 @@
+@import "varibles";
+@import "mixin";
+
+
+
+footer {
+  color: @white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+  padding: 100px 0;
+  .box();
+  .container {
+    .row {
+      ul {
+        li {
+          margin-bottom: 13px;
+          a {
+            color: #929292;
+          }
+        }
+      }
+      .category_heading {
+        font-size: @baseFontSize;
+        line-height: 1.7;
+        .padding_margin_clear();
+        margin-bottom: 10px;
+      }
+      .copyright {
+        p {
+          color: @white;
+          font-size: @baseFontSize - 2;
+          margin-bottom: 150px;
+        }
+        .footer_payment {
+          span {
+            margin-bottom: 25px;
+            font-size: @baseFontSize - 2;
+            display: block;
+            color: #929292;
+          }
+        }
+      }
+      .footer_nav {
+        ul {
+          li {
+            a {
+              color: @white;
+              font-size: @baseFontSize;
+            }
+          }
+        }
+      }
+      .footer_social {
+        margin-bottom: 237px;
+        li {
+          margin-right: 25px;
+          a {
+            i {
+              .img_hover(125%);
+            }
+          }
+        }
+      }
+      .umi_copy {
+        font-size: @baseFontSize;
+        color: #929292;
+
+      }
+    }
+  }
+}
+.pre_footer {
+  //margin-top: 80px;
+  padding-bottom: 450px;
+}
+@media screen and (max-width: 991px) {
+  .pre_footer {
+    padding-bottom: 315px;
+  }
+  footer {
+    height: 315px;
+    padding: 70px 20px;
+    .mobile_footer {
+      .footer_capt {
+          font-size: @baseFontSize;
+        .align();
+        margin-bottom: 35px;
+      }
+       #footerForm {
+         input {
+           width: 80%;
+           .background_el_col('../img/btn_array.png', 95%, 50%, @mgray);
+           border: 1px solid @darkGray;
+           .margin_align();
+           height: 50px;
+         }
+       }
+      .bottom_footer {
+        margin-top: 50px;
+        .mobile_social {
+          .flex-align();
+        }
+      }
+    }
+  }
+}

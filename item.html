@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>Toshiba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprites.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<!--log-->
+<div class="modal fade" id="logModal">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title up">Вход на сайт</h3>
+                <button data-dismiss="modal" aria-hidden="true" class="close">
+                    <img src="img/close_form.png" alt="close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="action" id="logform" method="post">
+                    <input type="text" name="user_login" placeholder="Логин" required="required">
+                    <input type="password" name="user_password" placeholder="Пароль" required="required">
+                    <input type="submit" value="Войти на сайт">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <h5 class="gray_text">Или войдите через соцсети</h5>
+                <ul class="social_log list_inline clearfix">
+                    <li>
+                        <a href="#"><i class="sprite-modal sprite-modal_icon_vk"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-modal sprite-modal_icon_fb"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-modal sprite-modal_icon_tw"></i></a>
+                    </li>
+                </ul>
+                <p>Еще не с нами?<a href="reg.html" class="blue_link"> Зарегестрируйтесь!</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end log-->
+<!--header-->
+<ul class="collapse_menu_header visible-xs visible-sm" id="headerMobileMenu">
+    <li><a href="about.html">О магазине</a></li>
+    <li><a href="delevery.html">Доставка и оплата</a></li>
+    <li><a href="help.html">Помощь</a></li>
+    <li><a href="contacts.html">Контактная информация</a></li>
+    <li><a href="review.html">Обзоры новинок техники</a></li>
+    <li><a href="question.html">Вопросы и ответы</a></li>
+    <li><a href="fan.html">Фан-клуб Pioneer</a></li>
+    <li><a href="gallery.html">Фотагалерея кабелей</a></li>
+    <li id="closeMenuToggle" class="close_toggle"><i class="fa fa-times" aria-hidden="true"></i></li>
+</ul>
+<header class="hidden-sm hidden-xs">
+    <div class="header_top_nav background_gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5">
+                    <ul class="left_nav list_inline">
+                        <li><a href="about.html">О магазине</a></li>
+                        <li><a href="delevery.html">Доставка и оплата</a></li>
+                        <li><a href="help.html">Помощь</a></li>
+                        <li><a href="contacts.html">Контактная информация</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-md-7 col-md-offset-0">
+                    <ul class="right_nav list_inline">
+                        <li><a href="review.html">Обзоры новинок техники</a></li>
+                        <li><a href="question.html">Вопросы и ответы</a></li>
+                        <li><a href="fan.html">Фан-клуб Pioneer</a></li>
+                        <li><a href="gallery.html">Фотогалерея кабелей</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_middle_nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 header_logo">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="index.html"><i class="sprite-header sprite-header_volume media-object"></i></a>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="media-heading up">
+                                Demodizzy
+                            </h2>
+                            <span class="gray_text">
+                                Демонстрационный магазин
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_contact">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="sprite-header sprite-header_phone media-object"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading up">
+                                +7 (499) 703-39-00
+                            </h3>
+                            <span><a href="#" class="gray_text">Заказать звонок</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_work_time">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="sprite-header sprite-header_clock media-object"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="gray_text media_heading">
+                                Режим работы
+                            </h4>
+                            <span class="gray_text">
+                                Пн-Пт с  10:00 — 20:00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_cart">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <i class="sprite-header sprite-header_cart"></i>
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media_heading up gray_text">
+                                В корзине ничего нет
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container search_row background_gray">
+        <div class="row">
+            <div class="col-md-4 background_red bottom_sub_menu catalog_menu clearfix col-lg-3">
+                <div class="menu_toggle float_left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3 class="capt center up white_text">Каталог товаров</h3>
+                <a href="#" class="float_right"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4 col-lg-5">
+                <form method="post" action="action" id="searchForm" class="circle_form">
+                    <input type="text" name="search" placeholder="Поиск">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <i class="sprite-header sprite-header_ring"></i>
+                    </div>
+                    <div class="col-md-10 col-lg-10">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="sprite-header sprite-header_user_icon"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading user_name gray_text">
+                                    <a href="#logModal" data-toggle="modal">Войти</a>
+                                    <!--<a href="#"><i class="fa fa-angle-down gray_text" aria-hidden="true"></i></a>-->
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header_mobile clearfix visible-xs visible-sm">
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="mobile_menu_toggle absolute" id="topMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile_top_logo">
+                <div class="media">
+                    <a href="index.html" class="media-left">
+                        <i class="sprite-header sprite-header_volume media-object"></i>
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading up">
+                            Demodizzy
+                        </h3>
+                        <span class="gray_text">
+                            Демонстрационный магазин
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_top_cart absolute">
+                <a href="cart.html">
+                    <i class="sprite-header sprite-header_cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header-->
+<main>
+    <div class="catalog_item">
+        <div class="section_capt">
+            <div class="container">
+                <div class="row">
+                    <ul class="breadcrumbs list_inline hidden-xs hidden-sm">
+                        <li>
+                            <h5 class="gray_text">
+                                  Каталог товаров 	&rarr;
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="gray_text">
+                                  DVD Техника 	&rarr;
+                            </h5>
+                        </li>
+                        <li>
+                            <h5 class="gray_text">
+                                ДВД плееры      &rarr;
+                            </h5>
+                        </li>
+                        <li>
+                            <h5>
+                                  Toshiba SR-Q660
+                            </h5>
+                        </li>
+                    </ul>
+                    <div class="absolute back_mobile visible-xs visible-sm">
+                        <img src="img/back_arrow.png">
+                    </div>
+
+                    <h1 class="inline hidden-md hidden-lg">
+                        Toshiba SR-Q660
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mobile_all_width">
+            <div class="row">
+                <div class="col-md-6 hidden-xs hidden-sm" style="padding-right: 40px;">
+                    <div class="carousels_container">
+                    <div class="row">
+                    <div class="carousel slide" id="itemThumb" data-ride="carousel">
+
+
+
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/catalog_item_1.png" alt="item">
+                            </div>
+                            <div class="item">
+                                <img src="img/catalog_item_2.png" alt="item">
+                            </div>
+                            <div class="item">
+                                <img src="img/catalog_item_3.png" alt="item">
+                            </div>
+                            <div class="item">
+                                <img src="img/catalog_item_4.png" alt="item">
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="row clearfix">
+                        <div class="carousel slide" id="itemPrew" data-ride="carousel">
+                            <div class="col-md-1">
+                                <a href="#itemPrew" class="carousel-control prev" data-slide="prev">
+                                    <img src="img/arrow_left.png" alt="prev">
+                                </a>
+                            </div>
+                            <div class="col-md-10">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div data-target="#itemThumb" data-slide-to="0" class="col-md-3"><img src="img/catalog_item_1.png" alt="item" class="img-responsive"></div>
+                                    <div data-target="#itemThumb" data-slide-to="1" class="col-md-3"><img src="img/catalog_item_2.png" alt="item" class="img-responsive"></div>
+                                    <div data-target="#itemThumb" data-slide-to="2" class="col-md-3"><img src="img/catalog_item_3.png" alt="item" class="img-responsive"></div>
+                                    </div>
+                                <div class="item">
+                                    <div data-target="#itemThumb" data-slide-to="0" class="col-md-3"><img src="img/catalog_item_1.png" alt="item" class="img-responsive"></div>
+                                    <div data-target="#itemThumb" data-slide-to="1" class="col-md-3"><img src="img/catalog_item_2.png" alt="item" class="img-responsive"></div>
+                                    <div data-target="#itemThumb" data-slide-to="2" class="col-md-3"><img src="img/catalog_item_3.png" alt="item" class="img-responsive"></div>
+                                </div>
+
+                                    </div>
+                                <div class="item"></div>
+                </div>
+                            <div class="col-md-1">
+                                <a href="#itemPrew" class="carousel-control next" data-slide="next">
+                                    <img src="img/arrow_right.png" alt="next">
+                                </a>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-xs-12 col-md-6 price_block">
+                    <div class="row top_row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="top_block">
+                                <img src="img/catalog_item_1.png" alt="item" class="img-responsive visible-xs visible-sm">
+                                <h2><sup><del class="gray_text">4 200</del></sup>3 500 <i class="fa fa-rub"></i></h2>
+
+                        </div>
+                        <a class="transparent_btn item_btn hidden-xs hidden-sm">Купить</a>
+                            </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="top_block clearfix">
+                            <div class="stock">В наличии</div>
+                                <ul class="rate_star list_inline inline">
+                                    <li><i class="fa fa-star red_text"></i></li>
+                                    <li><i class="fa fa-star red_text"></i></li>
+                                    <li><i class="fa fa-star red_text"></i></li>
+                                    <li><i class="fa fa-star red_text"></i></li>
+                                    <li><i class="fa fa-star gray_text"></i></li>
+                                    <li><span class="gray_text">12 отзывов</span></li>
+                                </ul>
+                                </div>
+                            <a class="transparent_btn item_btn visible-xs visible-sm">Купить</a>
+                            <a href="#" class="transparent_btn item_one_click">Купить в один клик</a>
+                            </div>
+                        </div>
+                    <div class="row bottom_row hidden-xs hidden-sm">
+                        <!--<div class="col-md-12 col-lg-6">-->
+
+                            <div class="col-md-6 col-lg-3 rew"><i class="sprite-item sprite-item_icons_circle inline"></i><a href="#">В сравнение</a> </div>
+                            <div class="col-md-6 col-lg-3 rew"><i class="sprite-item sprite-item_icons_comment inline"></i><a href="#">Отзывы (12)</a></div>
+                            <div class="col-md-6 col-lg-3 rew"><i class="sprite-item sprite-item_icons_getlink inline"></i><a href="#">Поделиться</a></div>
+                            <div class="col-md-6 col-lg-3 rew"><i class="sprite-item sprite-item_Icons_print inline"></i><a href="#">Печать</a></div>
+
+                        <ul class="list_inline social_count">
+                            <li class="fb clearfix">
+                            <span><i class="sprite-item sprite-social_icons_fb"></i></span>
+                            <span>12</span>
+                            </li>
+                            <li class="vk clearfix">
+                                <span><i class="sprite-item sprite-social_icons_vk"></i></span>
+                                <span>20</span>
+                            </li>
+                            <li class="tw clearfix">
+                                <span><i class="sprite-item sprite-social_icons_tw"></i></span>
+                                <span>13</span>
+                            </li>
+                        </ul>
+                            <!--</div>-->
+                        <div class="col-md-12 col-lg-6">
+                            <ul class="list_inline rew right_rew">
+                                <!--<li><i class="sprite-item sprite-item_icons_getlink"></i><a href="#">Поделиться</a></li>-->
+                                <!--<li><i class="sprite-item sprite-item_Icons_print"></i><a href="#">Печать</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 visible-xs visible-sm">
+                        <div class="row">
+
+                        </div>
+                        <div class="row opt_form">
+                            <div class="sect_capt">
+                                <h3 class="up">Опциональные свойства</h3>
+                            </div>
+                            <form action="action" method="post" id="optForm_xs" class="radio_form">
+                                <div>
+                                    <input type="radio" name="option" id="opt_f_1">
+                                    <label for="opt_f_1"></label>
+                                    <span>Красное дерево</span>
+                                    <span>2 000 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="option" id="opt_f_2" checked="checked">
+                                    <label for="opt_f_2"></label>
+                                    <span>Слоновая кость</span>
+                                    <span>5 500 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="option" id="opt_f_3">
+                                    <label for="opt_f_3"></label>
+                                    <span>Стразы</span>
+                                    <span>12 400 <i class="fa fa-rub"></i></span>
+                                </div>
+                                <div>
+                                    <input type="radio" name="option" id="opt_f_4">
+                                    <label for="opt_f_4"></label>
+                                    <span>Вышивка гладью</span>
+                                    <span>350 <i class="fa fa-rub"></i></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    </div>
+                        </div>
+
+
+
+                    </div>
+        <div class="item_option">
+            <div class="container mobile_all_width">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                        <div class="sect_capt">
+                            <h3 class="up">Характеристики</h3>
+                            </div>
+                        </div>
+                        <div class="row opt">
+                            <div class="col-md-12">
+                                <div class="row">
+                            <div class="col-md-6"><span>Диагональ</span></div>
+                            <div class="col-md-6"><span>15 см</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Вес</span></div>
+                            <div class="col-md-6"><span>6</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Экран</span></div>
+                            <div class="col-md-6"><span>Матовый</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Яркость</span></div>
+                            <div class="col-md-6"><span>100:1</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Цвет</span></div>
+                            <div class="col-md-6"><span>Коричневый</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Защита от детей</span></div>
+                            <div class="col-md-6"><span>Нет</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Количество каналов</span></div>
+                            <div class="col-md-6"><span>88</span></div>
+                                    </div>
+                                <div class="row">
+                            <div class="col-md-6"><span>Длина антены</span></div>
+                            <div class="col-md-6"><span>1,5м</span></div>
+                                    </div>
+                                <div class="row">
+                             <div class="col-md-12">
+                                 <p>Эти лампы соответствуют всем нормам и стандартам, в том числе,
+                                     и по потребляемой мощности.
+                                     Эти лампы называются высокотемпературными,
+                                     потому что при их работе цветовая температура газа достигает
+                                     4200 Кельвинов.</p>
+                             </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hidden-xs hidden-sm">
+                        <div class="row">
+                            <div class="sect_capt">
+                                <h3 class="up">Опциональные свойства</h3>
+                            </div>
+                        </div>
+                        <div class="row opt_form">
+                            <form action="action" method="post" id="optForm" class="radio_form">
+                              <div>
+                                <input type="radio" name="option" id="opt_1">
+                                <label for="opt_1"></label>
+                                  <span>Красное дерево</span>
+                                  <span>2 000 <i class="fa fa-rub"></i></span>
+                                  </div>
+                                <div>
+                                <input type="radio" name="option" id="opt_2" checked="checked">
+                                    <label for="opt_2"></label>
+                                    <span>Слоновая кость</span>
+                                    <span>5 500 <i class="fa fa-rub"></i></span>
+                                    </div>
+                                <div>
+                                <input type="radio" name="option" id="opt_3">
+                                    <label for="opt_3"></label>
+                                    <span>Стразы</span>
+                                    <span>12 400 <i class="fa fa-rub"></i></span>
+                                    </div>
+                                <div>
+                                <input type="radio" name="option" id="opt_4">
+                                    <label for="opt_4"></label>
+                                    <span>Вышивка гладью</span>
+                                    <span>350 <i class="fa fa-rub"></i></span>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid visible-xs visible-sm">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <ul class="list_inline social_count">
+                            <li class="fb clearfix">
+                                <span><i class="sprite-item sprite-social_icons_fb"></i></span>
+                                <span>12</span>
+                            </li>
+                            <li class="vk clearfix">
+                                <span><i class="sprite-item sprite-social_icons_vk"></i></span>
+                                <span>20</span>
+                            </li>
+                            <li class="tw clearfix">
+                                <span><i class="sprite-item sprite-social_icons_tw"></i></span>
+                                <span>13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_item">
+                <div class="container mobile_all_width">
+                    <div class="row">
+                        <div class="sect_capt">
+                            <h3 class="up">С этим товаром покупают</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="subCarousel" class="carousel slide item_carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                <div class="row goods">
+                                    <div class="col-md-3 tab_item col-xs-6">
+                                        <div class="item_img">
+                                            <img src="img/main_item_1.png" alt="item" class="img-responsive">
+                                        </div>
+                                        <div class="title">
+                                            <h4>Pioneer GL-HF</h4>
+                                        </div>
+                                        <div class="price">
+                                            <del class="gray_text">14 990 <i class="fa fa-rub" aria-hidden="true"></i></del>
+                                            <h3>10 990</h3>
+                                        </div>
+                                        <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                        <div class="hide_block hidden-xs hidden-sm">
+                                            <div>
+                                                <a href="#" class="gray_text">В налиции</a>
+                                                <a href="#" class="gray_text">Сравнить</a>
+                                                <a href="#" class="gray_text comment_count"><img src="img/comment.png" alt="comment">0</a>
+                                            </div>
+                                            <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3  tab_item col-xs-6">
+                                        <div class="item_img">
+                                            <img src="img/main_item_2.png" alt="alt" class="img-responsive">
+                                        </div>
+                                        <div class="title">
+                                            <h4>Standard Stratocaster® Plus Top</h4>
+                                        </div>
+                                        <div class="price">
+                                            <h3>3 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                        </div>
+                                        <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                        <div class="hide_block hidden-xs hidden-sm">
+                                            <div>
+                                                <a href="#" class="gray_text">В наличии</a>
+                                                <a href="#" class="gray_text">Сравнить</a>
+                                                <a href="#" class="gray_text comment_count"><img src="img/comment.png"
+                                                                                                 alt="comment">0</a>
+                                            </div>
+                                            <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 tab_item col-xs-6">
+                                        <div class="item_img">
+                                            <img src="img/main_item_3.png" alt="item" class="img-responsive">
+                                        </div>
+                                        <div class="title">
+                                            <h4>Beyerdynamic DT990 PRO динамические мониторные</h4>
+                                        </div>
+                                        <div class="price">
+                                            <del class="gray_text">4 200</del>
+                                            <h3>3 500<i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                        </div>
+                                        <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                        <div class="hide_block hidden-xs hidden-sm">
+                                            <div>
+                                                <a href="#" class="gray_text">В наличии</a>
+                                                <a href="#" class="gray_text">Сравнить</a>
+                                                <a href="#" class="gray_text comment_count">
+                                                    <img src="img/comment.png" alt="comment">
+                                                </a>
+                                            </div>
+                                            <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 tab_item col-xs-6">
+                                        <div class="item_img">
+                                            <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                        </div>
+                                        <div class="title">
+                                            <h4>Вы не поверите, но это валторна</h4>
+                                        </div>
+                                        <div class="price">
+                                            <del class="gray_text">14 990</del>
+                                            <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                        </div>
+                                        <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                        <div class="hide_block hidden-xs hidden-sm">
+                                            <div>
+                                                <a href="#" class="gray_text">В наличии</a>
+                                                <a href="#" class="gray_text">Сравнить</a>
+                                                <a href="#" class="gray_text comment_count">
+                                                    <img src="img/comment.png" alt="comment">0
+                                                </a>
+                                            </div>
+                                            <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 tab_item col-xs-6 hidden-md">
+                                        <div class="item_img">
+                                            <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                        </div>
+                                        <div class="title">
+                                            <h4>Вы не поверите, но это валторна</h4>
+                                        </div>
+                                        <div class="price">
+                                            <del class="gray_text">14 990</del>
+                                            <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                        </div>
+                                        <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                        <div class="hide_block hidden-xs hidden-sm">
+                                            <div>
+                                                <a href="#" class="gray_text">В наличии</a>
+                                                <a href="#" class="gray_text">Сравнить</a>
+                                                <a href="#" class="gray_text comment_count">
+                                                    <img src="img/comment.png" alt="comment">0
+                                                </a>
+                                            </div>
+                                            <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row goods">
+                                        <div class="col-md-3 tab_item col-xs-6">
+                                            <div class="item_img">
+                                                <img src="img/main_item_1.png" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="title">
+                                                <h4>Pioneer GL-HF</h4>
+                                            </div>
+                                            <div class="price">
+                                                <del class="gray_text">14 990 <i class="fa fa-rub" aria-hidden="true"></i></del>
+                                                <h3>10 990</h3>
+                                            </div>
+                                            <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                            <div class="hide_block hidden-xs hidden-sm">
+                                                <div>
+                                                    <a href="#" class="gray_text">В налиции</a>
+                                                    <a href="#" class="gray_text">Сравнить</a>
+                                                    <a href="#" class="gray_text comment_count"><img src="img/comment.png" alt="comment">0</a>
+                                                </div>
+                                                <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3  tab_item col-xs-6">
+                                            <div class="item_img">
+                                                <img src="img/main_item_2.png" alt="alt" class="img-responsive">
+                                            </div>
+                                            <div class="title">
+                                                <h4>Standard Stratocaster® Plus Top</h4>
+                                            </div>
+                                            <div class="price">
+                                                <h3>3 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                            </div>
+                                            <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                            <div class="hide_block hidden-xs hidden-sm">
+                                                <div>
+                                                    <a href="#" class="gray_text">В наличии</a>
+                                                    <a href="#" class="gray_text">Сравнить</a>
+                                                    <a href="#" class="gray_text comment_count"><img src="img/comment.png"
+                                                                                                     alt="comment">0</a>
+                                                </div>
+                                                <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 tab_item col-xs-6">
+                                            <div class="item_img">
+                                                <img src="img/main_item_3.png" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="title">
+                                                <h4>Beyerdynamic DT990 PRO динамические мониторные</h4>
+                                            </div>
+                                            <div class="price">
+                                                <del class="gray_text">4 200</del>
+                                                <h3>3 500<i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                            </div>
+                                            <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                            <div class="hide_block hidden-xs hidden-sm">
+                                                <div>
+                                                    <a href="#" class="gray_text">В наличии</a>
+                                                    <a href="#" class="gray_text">Сравнить</a>
+                                                    <a href="#" class="gray_text comment_count">
+                                                        <img src="img/comment.png" alt="comment">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 tab_item col-xs-6">
+                                            <div class="item_img">
+                                                <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="title">
+                                                <h4>Вы не поверите, но это валторна</h4>
+                                            </div>
+                                            <div class="price">
+                                                <del class="gray_text">14 990</del>
+                                                <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                            </div>
+                                            <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                            <div class="hide_block hidden-xs hidden-sm">
+                                                <div>
+                                                    <a href="#" class="gray_text">В наличии</a>
+                                                    <a href="#" class="gray_text">Сравнить</a>
+                                                    <a href="#" class="gray_text comment_count">
+                                                        <img src="img/comment.png" alt="comment">0
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 tab_item col-xs-6 hidden-md">
+                                            <div class="item_img">
+                                                <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                            </div>
+                                            <div class="title">
+                                                <h4>Вы не поверите, но это валторна</h4>
+                                            </div>
+                                            <div class="price">
+                                                <del class="gray_text">14 990</del>
+                                                <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                            </div>
+                                            <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                            <div class="hide_block hidden-xs hidden-sm">
+                                                <div>
+                                                    <a href="#" class="gray_text">В наличии</a>
+                                                    <a href="#" class="gray_text">Сравнить</a>
+                                                    <a href="#" class="gray_text comment_count">
+                                                        <img src="img/comment.png" alt="comment">0
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control_container clearfix hidden-xs hidden-sm">
+                            <a href="#subCarousel" data-slide="prev" class="carousel-control left">
+                                <img src="img/arrow_left.png" alt="prev">
+                            </a>
+                            <a href="#subCarousel" data-slide="next" class="carousel-control right">
+                                <img src="img/arrow_right.png" alt="next">
+                            </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mobile_all_width">
+                    <div class="row">
+                        <div class="sect_capt">
+                            <h3 class="up">Похожие товары</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div id="someTimeItem"  class="carousel slide item_carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row goods">
+                                            <div class="col-md-3 tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_1.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Pioneer GL-HF</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">14 990 <i class="fa fa-rub" aria-hidden="true"></i></del>
+                                                    <h3>10 990</h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В налиции</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count"><img src="img/comment.png" alt="comment">0</a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3  tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_2.png" alt="alt" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Standard Stratocaster® Plus Top</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <h3>3 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count"><img src="img/comment.png"
+                                                                                                         alt="comment">0</a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_3.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Beyerdynamic DT990 PRO динамические мониторные</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">4 200</del>
+                                                    <h3>3 500<i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count">
+                                                            <img src="img/comment.png" alt="comment">
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Вы не поверите, но это валторна</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">14 990</del>
+                                                    <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count">
+                                                            <img src="img/comment.png" alt="comment">0
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 tab_item col-xs-6 hidden-md">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Вы не поверите, но это валторна</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">14 990</del>
+                                                    <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count">
+                                                            <img src="img/comment.png" alt="comment">0
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row goods">
+                                            <div class="col-md-3 tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_1.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Pioneer GL-HF</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">14 990 <i class="fa fa-rub" aria-hidden="true"></i></del>
+                                                    <h3>10 990</h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В налиции</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count"><img src="img/comment.png" alt="comment">0</a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3  tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_2.png" alt="alt" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Standard Stratocaster® Plus Top</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <h3>3 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count"><img src="img/comment.png"
+                                                                                                         alt="comment">0</a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_3.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Beyerdynamic DT990 PRO динамические мониторные</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">4 200</del>
+                                                    <h3>3 500<i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count">
+                                                            <img src="img/comment.png" alt="comment">
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 tab_item col-xs-6">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Вы не поверите, но это валторна</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">14 990</del>
+                                                    <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count">
+                                                            <img src="img/comment.png" alt="comment">0
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 tab_item col-xs-6 hidden-md">
+                                                <div class="item_img">
+                                                    <img src="img/main_item_4.png" alt="item" class="img-responsive">
+                                                </div>
+                                                <div class="title">
+                                                    <h4>Вы не поверите, но это валторна</h4>
+                                                </div>
+                                                <div class="price">
+                                                    <del class="gray_text">14 990</del>
+                                                    <h3>12 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                                </div>
+                                                <a href="№" class="transparent_btn goods_btn">Купить</a>
+                                                <div class="hide_block hidden-xs hidden-sm">
+                                                    <div>
+                                                        <a href="#" class="gray_text">В наличии</a>
+                                                        <a href="#" class="gray_text">Сравнить</a>
+                                                        <a href="#" class="gray_text comment_count">
+                                                            <img src="img/comment.png" alt="comment">0
+                                                        </a>
+                                                    </div>
+                                                    <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control_container clearfix hidden-xs hidden-sm">
+                                    <a href="#someTimeItem" data-slide="prev" class="carousel-control left">
+                                        <img src="img/arrow_left.png" alt="prev">
+                                    </a>
+                                    <a href="#someTimeItem" data-slide="next" class="carousel-control right">
+                                        <img src="img/arrow_right.png" alt="next">
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <div class="container hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="sect_capt">
+                            <h3 class="up">
+                                Вы недавно смотрели
+                            </h3>
+                            </div>
+                            <div class="row goods goods_bottom">
+                                <div class="col-md-3 tab_item col-xs-6">
+                                    <div class="item_img">
+                                        <img src="img/main_item_1.png" alt="item" class="img-responsive">
+                                    </div>
+                                    <div class="title">
+                                        <h4>Pioneer GL-HF</h4>
+                                    </div>
+                                    <div class="price">
+                                        <del class="gray_text">14 990 <i class="fa fa-rub" aria-hidden="true"></i></del>
+                                        <h3>10 990</h3>
+                                    </div>
+                                    <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                    <div class="hide_block hidden-xs hidden-sm">
+                                        <div>
+                                            <a href="#" class="gray_text">В налиции</a>
+                                            <a href="#" class="gray_text">Сравнить</a>
+                                            <a href="#" class="gray_text comment_count"><img src="img/comment.png" alt="comment">0</a>
+                                        </div>
+                                        <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  tab_item col-xs-6">
+                                    <div class="item_img">
+                                        <img src="img/main_item_2.png" alt="alt" class="img-responsive">
+                                    </div>
+                                    <div class="title">
+                                        <h4>Standard Stratocaster® Plus Top</h4>
+                                    </div>
+                                    <div class="price">
+                                        <h3>3 500 <i class="fa fa-rub" aria-hidden="true"></i></h3>
+                                    </div>
+                                    <a href="#" class="transparent_btn goods_btn">Купить</a>
+                                    <div class="hide_block hidden-xs hidden-sm">
+                                        <div>
+                                            <a href="#" class="gray_text">В наличии</a>
+                                            <a href="#" class="gray_text">Сравнить</a>
+                                            <a href="#" class="gray_text comment_count"><img src="img/comment.png"
+                                                                                             alt="comment">0</a>
+                                        </div>
+                                        <a href="#" class="transparent_btn one_click_btn">Купить в один клик</a>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                </div>
+        </div>
+        </main>
+<div class="pre_footer"></div>
+<footer class="background_black">
+    <div class="container mobile_footer visible-xs visible-sm">
+        <div class="row">
+            <h4 class="gray_text footer_capt">
+                Подпишитесь на новости и акции и будьте в курсе всего!
+            </h4>
+            <form action="action" method="post" id="footerForm" class="circle_form">
+                <input type="text" name="footer_search" placeholder="Введите ваш е-мэйл">
+            </form>
+        </div>
+        <div class="row bottom_footer">
+            <div class="col-xs-6">
+                <p>&copy; DEMODIZZY  2016</p>
+            </div>
+            <div class="col-xs-6">
+                <ul class="mobile_social list_inline">
+                    <li><a href="#"><i class="sprite-social sprite-social_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_inst"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="copyright align_left">
+                    <p class="up">© DEMODIZZY  2016</p>
+                    <div class="footer_payment">
+                        <span>Мы принемаем к оплате:</span>
+                        <ul class="list_inline">
+                            <li><i class="sprite-payment sprite-payment_master_cart"></i></li>
+                            <li><i class="sprite-payment sprite-payment_qiwi"></i></li>
+                            <li><i class="sprite-payment sprite-payment_visa"></i></li>
+                            <li><i class="sprite-payment sprite-payment_vmz"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 footer_colums_1">
+                <div class="category_list">
+                    <h3 class="category_heading white_text">
+                        Аудиотехника
+                    </h3>
+                    <ul>
+                        <li><a href="#">Музыкальные центры</a></li>
+                        <li><a href="#">Плееры</a></li>
+                        <li><a href="#">Акустика</a></li>
+                        <li><a href="#">Магнитофоны</a></li>
+                    </ul>
+                </div>
+                <div class="category_list">
+                    <h3 class="category_heading white_text">DVD техника</h3>
+                    <ul>
+                        <li><a href="#">ДВД плееры</a></li>
+                        <li><a href="#">ДВД рекордеры</a></li>
+                        <li><a href="#">ДВД диски</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-2 footer_colums_2">
+                <div class="category_list">
+                    <h3 class="category_heading white_text">
+                        Телевизоры
+                    </h3>
+                    <ul>
+                        <li><a href="#">ЖК телефизоры</a></li>
+                        <li><a href="#">Цветные телефизоры</a></li>
+                        <li><a href="#">Портативные телевизоры</a></li>
+                        <li><a href="#">Черно-белые телевизоры</a></li>
+                    </ul>
+                </div>
+                <div class="category_list">
+                    <h3 class="category_heading">
+                        Мобильная связь
+                    </h3>
+                    <ul>
+                        <li><a href="#">Телефоны GSM</a></li>
+                        <li><a href="#">Коммуникаторы</a></li>
+                        <li><a href="#">Смартфоны</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer_nav">
+                <ul class="white_text">
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <ul class="white_text">
+                    <li><a href="#">Обзоры новинок техники</a></li>
+                    <li><a href="#">Вопррсы и ответы</a></li>
+                    <li><a href="#">Фан клуб Pioneer</a></li>
+                    <li><a href="#">Фотагалерея кабелей</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 last_colums align_right">
+                <ul class="footer_social list_inline">
+                    <li><a href="#"><i class="sprite-social sprite-social_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_inst"></i></a></li>
+                </ul>
+                <p class="umi_copy">
+                    Работает на UMI.CMS
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function() {
+        $('#itemPrew').carousel('pause');
+        $('#itemThumb').carousel('pause');
+    })
+</script>
+<script src="js/menu.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+         Контактная информация
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprites.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<!--header-->
+<ul class="collapse_menu_header visible-xs visible-sm" id="headerMobileMenu">
+    <li><a href="about.html">О магазине</a></li>
+    <li><a href="delevery.html">Доставка и оплата</a></li>
+    <li><a href="help.html">Помощь</a></li>
+    <li><a href="contacts.html">Контактная информация</a></li>
+    <li><a href="review.html">Обзоры новинок техники</a></li>
+    <li><a href="question.html">Вопросы и ответы</a></li>
+    <li><a href="fan.html">Фан-клуб Pioneer</a></li>
+    <li><a href="gallery.html">Фотагалерея кабелей</a></li>
+    <li id="closeMenuToggle" class="close_toggle"><i class="fa fa-times" aria-hidden="true"></i></li>
+</ul>
+<header class="hidden-sm hidden-xs">
+    <div class="header_top_nav background_gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5">
+                    <ul class="left_nav list_inline">
+                        <li><a href="about.html">О магазине</a></li>
+                        <li><a href="delevery.html">Доставка и оплата</a></li>
+                        <li><a href="help.html">Помощь</a></li>
+                        <li><a href="contacts.html">Контактная информация</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-md-7 col-md-offset-0">
+                    <ul class="right_nav list_inline">
+                        <li><a href="review.html">Обзоры новинок техники</a></li>
+                        <li><a href="question.html">Вопросы и ответы</a></li>
+                        <li><a href="fan.html">Фан-клуб Pioneer</a></li>
+                        <li><a href="gallery.html">Фотогалерея кабелей</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_middle_nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 header_logo">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="index.html"><i class="sprite-header sprite-header_volume media-object"></i></a>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="media-heading up">
+                                Demodizzy
+                            </h2>
+                            <span class="gray_text">
+                                Демонстрационный магазин
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_contact">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="sprite-header sprite-header_phone media-object"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading up">
+                                +7 (499) 703-39-00
+                            </h3>
+                            <span><a href="#" class="gray_text">Заказать звонок</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_work_time">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="sprite-header sprite-header_clock media-object"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="gray_text media_heading">
+                                Режим работы
+                            </h4>
+                            <span class="gray_text">
+                                Пн-Пт с  10:00 — 20:00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 header_cart">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <i class="sprite-header sprite-header_cart"></i>
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media_heading up gray_text">
+                                В корзине ничего нет
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container search_row background_gray">
+        <div class="row">
+            <div class="col-md-4 background_red bottom_sub_menu catalog_menu clearfix col-lg-3">
+                <div class="menu_toggle float_left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h3 class="capt center up white_text">Каталог товаров</h3>
+                <a href="#" class="float_right"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4 col-lg-5">
+                <form method="post" action="action" id="searchForm" class="circle_form">
+                    <input type="text" name="search" placeholder="Поиск">
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2">
+                        <i class="sprite-header sprite-header_ring"></i>
+                    </div>
+                    <div class="col-md-10 col-lg-10">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="sprite-header sprite-header_user_icon"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading user_name gray_text">
+                                    Добрый день . $username .
+                                    <a href="#"><i class="fa fa-angle-down gray_text" aria-hidden="true"></i></a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header_mobile clearfix visible-xs visible-sm">
+    <div class="container clearfix">
+        <div class="row clearfix">
+            <div class="mobile_menu_toggle absolute" id="topMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile_top_logo">
+                <div class="media">
+                    <a href="index.html" class="media-left">
+                        <i class="sprite-header sprite-header_volume media-object"></i>
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading up">
+                            Demodizzy
+                        </h3>
+                        <span class="gray_text">
+                            Демонстрационный магазин
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_top_cart absolute">
+                <a href="cart.html">
+                    <i class="sprite-header sprite-header_cart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end header-->
+<main>
+    <div class="section_capt">
+    <div class="container">
+        <div class="row">
+            <h5 class="gray_text hidden-xs hidden-sm">
+                    Контактная информация
+                </h5>
+                <h1>
+                    Контактная информация
+                </h1>
+        </div>
+        </div>
+    </div>
+    <div class="contacts">
+    <div class="container mobile_all_width">
+        <div class="row">
+                    <div class="col-md-7 col-lg-6 absolute contact_absolute">
+                        <div class="row contact_info">
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="sprite_contact sprite-contact_marker media-object"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading">
+                                            Санкт-Петербург, Красного Курсанта, 25
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="sprite_contact sprite-contact_phone media-object"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="media-heading">
+                                            +7 (499) 703-39-00
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="sprite_contact sprite-contact_skype media-object"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading">
+                                            mygoodshop
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="sprite_contact sprite-contact_mail media-object"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading">
+                                            info@demodizzy.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contact_form hidden-xs hidden-sm">
+                            <form action="action" method="post" id="contactForm">
+                                <h2 class="form_capt up">Может быть напишем?</h2>
+                                <input type="text" name="name" placeholder="Как зовут?" required="required">
+                                <input type="e-mail" name="e-mail" placeholder="Почта или телефон" required="required">
+                                <textarea name="messages" cols="30" rows="8" placeholder="а вот тут то мы и напишем" required="required"></textarea>
+                                <input type="submit" value="Отправить сообщение">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map">
+
+                </div>
+
+            </div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wYZn36Y2XGUlY7Y_tlq67p_5JitUj2c&callback=initMap">
+            </script>
+            <div class="row contact_form visible-xs visible-sm">
+                <form action="action" method="post" id="mobileContactForm">
+                    <h2 class="form_capt up">Может быть напишем?</h2>
+                    <input type="text" name="name" placeholder="Как зовут?" required="required">
+                    <input type="e-mail" name="e-mail" placeholder="Почта или телефон" required="required">
+                    <textarea name="messages" cols="30" rows="8" placeholder="а вот тут то мы и напишем" required="required"></textarea>
+                    <input type="submit" value="Отправить сообщение">
+                </form>
+            </div>
+        </div>
+        </div>
+</main>
+<div class="pre_footer"></div>
+<footer class="background_black">
+    <div class="container mobile_footer visible-xs visible-sm">
+        <div class="row">
+            <h4 class="gray_text footer_capt">
+                Подпишитесь на новости и акции и будьте в курсе всего!
+            </h4>
+            <form action="action" method="post" id="footerForm" class="circle_form">
+                <input type="text" name="footer_search" placeholder="Введите ваш е-мэйл">
+            </form>
+        </div>
+        <div class="row bottom_footer">
+            <div class="col-xs-6">
+                <p>&copy; DEMODIZZY  2016</p>
+            </div>
+            <div class="col-xs-6">
+                <ul class="mobile_social list_inline">
+                    <li><a href="#"><i class="sprite-social sprite-social_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_inst"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container hidden-xs hidden-sm">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="copyright align_left">
+                    <p class="up">© DEMODIZZY  2016</p>
+                    <div class="footer_payment">
+                        <span>Мы принемаем к оплате:</span>
+                        <ul class="list_inline">
+                            <li><i class="sprite-payment sprite-payment_master_cart"></i></li>
+                            <li><i class="sprite-payment sprite-payment_qiwi"></i></li>
+                            <li><i class="sprite-payment sprite-payment_visa"></i></li>
+                            <li><i class="sprite-payment sprite-payment_vmz"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 footer_colums_1">
+                <div class="category_list">
+                    <h3 class="category_heading white_text">
+                        Аудиотехника
+                    </h3>
+                    <ul>
+                        <li><a href="#">Музыкальные центры</a></li>
+                        <li><a href="#">Плееры</a></li>
+                        <li><a href="#">Акустика</a></li>
+                        <li><a href="#">Магнитофоны</a></li>
+                    </ul>
+                </div>
+                <div class="category_list">
+                    <h3 class="category_heading white_text">DVD техника</h3>
+                    <ul>
+                        <li><a href="#">ДВД плееры</a></li>
+                        <li><a href="#">ДВД рекордеры</a></li>
+                        <li><a href="#">ДВД диски</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-2 footer_colums_2">
+                <div class="category_list">
+                    <h3 class="category_heading white_text">
+                        Телевизоры
+                    </h3>
+                    <ul>
+                        <li><a href="#">ЖК телефизоры</a></li>
+                        <li><a href="#">Цветные телефизоры</a></li>
+                        <li><a href="#">Портативные телевизоры</a></li>
+                        <li><a href="#">Черно-белые телевизоры</a></li>
+                    </ul>
+                </div>
+                <div class="category_list">
+                    <h3 class="category_heading">
+                        Мобильная связь
+                    </h3>
+                    <ul>
+                        <li><a href="#">Телефоны GSM</a></li>
+                        <li><a href="#">Коммуникаторы</a></li>
+                        <li><a href="#">Смартфоны</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer_nav">
+                <ul class="white_text">
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <ul class="white_text">
+                    <li><a href="#">Обзоры новинок техники</a></li>
+                    <li><a href="#">Вопррсы и ответы</a></li>
+                    <li><a href="#">Фан клуб Pioneer</a></li>
+                    <li><a href="#">Фотагалерея кабелей</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 last_colums align_right">
+                <ul class="footer_social list_inline">
+                    <li><a href="#"><i class="sprite-social sprite-social_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-social sprite-social_inst"></i></a></li>
+                </ul>
+                <p class="umi_copy">
+                    Работает на UMI.CMS
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/map.js"></script>
+<script src="js/menu.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wYZn36Y2XGUlY7Y_tlq67p_5JitUj2c&callback=initMap"></script>
+</body>
+</html>
